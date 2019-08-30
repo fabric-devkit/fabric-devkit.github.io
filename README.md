@@ -8,11 +8,11 @@
 
 * Product owners are member of an agile team who serves as the Customer proxy responsible for working with Product Management and other stakeholders—including other POs—to define and prioritize stories in the team backlog<sup>[1](https://www.scaledagileframework.com/product-owner/)</sup>;
 
-Question: If I wanted to learn about why don't I just go to the [official Hyperledger Fabric document][1]?
+Question: If I wanted to learn about why don't I just go to the [official Hyperledger Fabric document](https://hyperledger-fabric.readthedocs.io/en/release-1.4/blockchain.html)?
 
-Firstly, `Fabric-Devkit` is not intended to replace the [official document][1]. It is to complement the [official document][1] or others materials.
+Firstly, `Fabric-Devkit` is not intended to replace the official document. It is to complement the official document or others materials.
 
-Secondly, feedbacks to the maintainers of `Fabric-Devkit` suggested that [official document][1] intended for a "one-size-fits-all" audiance. Hence, the intention of `Fabric Devkit` is to help different personas find learning route that is suited to their needs.
+Secondly, feedbacks to the maintainers of `Fabric-Devkit` suggested that official document intended for a "one-size-fits-all" audiance. Hence, the intention of `Fabric Devkit` is to help different personas find learning route that is suited to their needs.
 
 Thirdly, by being independent of the official Hyperledger Fabric projects and practicing the lean startup methodology, it gives the maintainer of the `Fabric-Devkit` the ability to generate Minimum Viable Product (MVP) styled projects where we can quickly gather feedback and then decide to persists or pivot.
 
@@ -43,6 +43,3 @@ The copyrights to the projects belongs to the contributors. All projects are lic
 Copyright (c) 2019. The Fabric-DevKit Authors. All rights reserved.
 SPDX-License-Identifier: Apache-2.0
 ```
-
-
-[1]((https://hyperledger-fabric.readthedocs.io/en/release-1.4/blockchain.html))
