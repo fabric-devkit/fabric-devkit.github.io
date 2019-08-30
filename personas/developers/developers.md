@@ -1,7 +1,9 @@
 ---
-title: Application Development
+layout: default
+title: Application Developers
+parent: Personas
 has_children: true
-nav_order: 3
+nav_order: 1
 ---
 
-# Application Development
+# Application Developers
