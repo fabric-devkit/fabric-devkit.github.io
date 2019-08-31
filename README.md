@@ -13,13 +13,12 @@ The mission of `Fabric Devkit` is to help Platform (or DevOps or Site Reliabilit
 | Platform Engineers | Anyone who is responsible for creating or using tools to automate the orchestration of infrastructure and middlewares. |
 | Application Developers | Anyone who is involved in the creation of User Interfaces (UI) and integrating UI with middleware. |
 | Product owners | Anyone who is member of an agile team who serves as the Customer proxy responsible for working with Product Management and other stakeholders—including other POs—to define and prioritize stories in the team backlog<sup>[1](https://www.scaledagileframework.com/product-owner/)</sup> |
-[ Definition of platform engineers, application developers and product owners ]
 
 Wait, if I wanted to learn about Hyperledger Fabric, couldn't I just go to the [official Hyperledger Fabric document](https://hyperledger-fabric.readthedocs.io/en/release-1.4/blockchain.html)?
 
 Firstly, `Fabric-Devkit` is not intended to replace the official document. It is to complement the official document or others materials, unofficially.
 
-Secondly, feedbacks to `Fabric-Devkit` maintainers suggest that official document is "one-size-fits-all". If you are new to blockchain it is pretty tough to understand what Hyperledger Fabric is about let alone how to use it. Also many of the examples provided by the official documentation mix multiple aspects of the technology together namely, platform engineering and application development. For product owners, who have only worked on traditional applications, the official documentation expects you to have experience working with decentralised system. The intention of `Fabric Devkit` is to help people with the different background to find learning route that is suited to their needs.
+Secondly, feedbacks to `Fabric-Devkit` maintainers suggest that official document is "one-size-fits-all". If you are new to blockchain it is pretty tough to understand what Hyperledger Fabric is about let alone how to use it. Also many of the examples provided by the official documentation mix multiple aspects of the technology together namely, platform engineering and application development. For product owners, who have only worked on traditional applications, the official documentation expects you to have experience working with decentralised system. The intention of `Fabric Devkit` is to help people with different backgrounds to find learning route that is suited to their needs.
 
 Thirdly, by being independent of the official Hyperledger Fabric projects and as practitioner of the lean startup methodology, it gives the principal maintainer of the `Fabric-Devkit` the ability to generate Minimum Viable Product (MVP) with minimum bureaucratic processes.
 
@@ -33,7 +32,6 @@ Fourthly, the best way to learn about a technology is to create and share stuff!
 | --- | --- |
 | Core | These are projects created without any reference to specific domains such as Supply Chain, Cryptocurrencies, etc. They are typically projects intending to illustrate the underlying architecture of Hyperledger Fabric or productivity tools that can be used to support other projects. |
 | Demo | These are projects created to illustrate one of many ways of implementing a given use case. |
-[Definition of core or demo projects]
 
 *Core projects*
 
