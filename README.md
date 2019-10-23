@@ -1,6 +1,6 @@
 # Overview
 
-`Fabric Devkit` is a collection of projects created by Paul Sitoh and David Carrington (i.e. the principal maintainers).
+`Fabric Devkit` is a collection of projects, based on Hyperledger Fabric, created by Paul Sitoh and David Carrington (i.e. the principal maintainers).
 
 The projects started as a way for the principal maintainers to develop deep knowledge about Hyperledger Fabric by translating their knowledge into codes. The principal maintainers also decided to open source `Fabric Devkit` to share knowledge and solicit feedbacks.
 
