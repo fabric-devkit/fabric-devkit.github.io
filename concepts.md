@@ -56,3 +56,8 @@ In a Fabric network, the job of endorsing and sequencing transactions into ledge
 The job of ensuring that are peers provides a common view (i.e. reach a `consensus`) of the ledger is based on endorsement from at least one or more peers and the orderer who is reponsible for ordering the blocks and transactions.
 
 Having reached consensus on the sequencing of transactions and blocks, the last stage of is to commit the results of the transactions in the world state. When the a transaction is committed to all peers, the transaction is said to have achieved `transactional finality`.
+
+## Copyright Notice
+
+Copyright (c) 2019. The Fabric-DevKit Authors. All rights reserved.
+SPDX-License-Identifier: Apache-2.0
