@@ -3,7 +3,7 @@ title: Key Concepts
 nav_order: 2
 ---
 
-## Key Concepts
+## Overview
 
 From a very high level perspective, Hyperledger Fabric, according to its official document is a "platform for distributed ledger solutions" and sometimes referred to as a Blockchain platform. However, what exactly is a distributed ledger or blockchain and what problem is Hyperledger Fabric intended to solve?
 
