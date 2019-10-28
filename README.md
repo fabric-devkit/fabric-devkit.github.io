@@ -37,14 +37,14 @@ Fourthly, the best way to learn about a technology is to create and share stuff!
 
 Core projects are named `github.com/fabric-devkit/core-<domain>-<optional>`. The list of core projects are:
 
-* [https://fabric-devkit/core-platform](https://fabric-devkit/core-platform) is dedicated to demonstrating ways of assembling parts of Hyperledger Fabric components.
-* [https://fabric-devkit/core-chaincode-go](https://fabric-devkit/core-chaincode-go) is deducated to demonstrating the core principles of writing chaincode in Go.
+* [https://fabric-devkit.github.io/core-platform](https://fabric-devkit.github.io/core-platform) is dedicated to demonstrating ways of assembling parts of Hyperledger Fabric components.
+* [https://fabric-devkit.github.io/core-chaincode-go](https://fabric-devkit.github.io/core-chaincode-go) is deducated to demonstrating the core principles of writing chaincode in Go.
 
 ### Demo projects
 
 Demo projects are named `github.com/fabric-devkit/demo-<domain>-<optional>`. This listof demo projects are:
 
-* [https://fabric-devkit/demo-ldap](https://fabric-devkit/demo-ldap) is dedicated to demonstrating the integration between an LDAP and Hyperledger Fabric
+* [https://fabric-devkit.github.io/demo-ldap](https://fabric-devkit.github.io/demo-ldap) is dedicated to demonstrating the integration between an LDAP and Hyperledger Fabric
 
 ### Find projects by personas
 
