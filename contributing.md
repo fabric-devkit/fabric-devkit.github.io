@@ -17,4 +17,4 @@ There are three ways to contribute:
 
 All contribution commits must be GPG signed and signed off i.e. `git commit -S -s`.
 
-To set up for GPG signature, please refer to instuction [here[](https://help.github.com/en/articles/about-commit-signature-verification#gpg-commit-signature-verification).
+To set up for GPG signature, please refer to instuction [here](https://help.github.com/en/articles/about-commit-signature-verification#gpg-commit-signature-verification).
