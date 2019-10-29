@@ -24,7 +24,7 @@ Thirdly, by being independent of the official Hyperledger Fabric projects and as
 
 Fourthly, the best way to learn about a technology is to create and share stuff!
 
-## How can I find a project that is suited for my learning needs?
+## How can I stuff in Fabric Devkit that interest me?
 
 `Fabric Devkit` projects are categorised as either `core` or `demo`.
 
@@ -33,22 +33,7 @@ Fourthly, the best way to learn about a technology is to create and share stuff!
 | Core | These are projects created without any reference to specific domains such as Supply Chain, Cryptocurrencies, etc. They are typically projects intending to illustrate the underlying architecture of Hyperledger Fabric or productivity tools. |
 | Demo | These are projects created to illustrate one of many ways of implementing a given use case. |
 
-### Core projects
-
-Core projects are named `github.com/fabric-devkit/core-<domain>-<optional>`. The list of core projects are:
-
-* [https://fabric-devkit.github.io/core-platform](https://fabric-devkit.github.io/core-platform) is dedicated to demonstrating ways of assembling parts of Hyperledger Fabric components.
-* [https://fabric-devkit.github.io/core-chaincode-go](https://fabric-devkit.github.io/core-chaincode-go) is deducated to demonstrating the core principles of writing chaincode in Go.
-
-### Demo projects
-
-Demo projects are named `github.com/fabric-devkit/demo-<domain>-<optional>`. This listof demo projects are:
-
-* [https://fabric-devkit.github.io/demo-ldap](https://fabric-devkit.github.io/demo-ldap) is dedicated to demonstrating the integration between an LDAP and Hyperledger Fabric
-
-### Find projects by personas
-
-Alternatively, select on the left panel the item named `Personas`, then select the roles appropriate to yours and then select the persona that matches you. Follow the steps of activities describe in the persona.
+Alternatively, you could try to find a `Personas` that matches you and follow the user stories associated with the persona. There are hypertext links that will leead you to aspects of `Fabric Devkit` that might interest you.
 
 ## Who maintains the Fabric Devkit?
 
