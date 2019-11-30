@@ -4,11 +4,11 @@
 
 ## What can I expect from the Fabric Devkit?
 
-You can use the `Fabric Devkit` projects to you learn about Hyperledger Fabric architecture and use cases. However, if I wanted to learn about Hyperledger Fabric, couldn't I just go to the [official Hyperledger Fabric document](https://hyperledger-fabric.readthedocs.io/en/release-1.4/blockchain.html)?
+You can use the `Fabric Devkit` projects to you learn about Hyperledger Fabric architecture and use cases. However, if you wanted to learn about Hyperledger Fabric, couldn't you just go to the [official Hyperledger Fabric document](https://hyperledger-fabric.readthedocs.io/en/release-1.4/blockchain.html)?
 
-Firstly, `Fabric-Devkit` is not intended to replace the official document. It is to complement the official document or others materials.
+Firstly, `Fabric Devkit` is not intended to replace the official Hyperledger Fabric documentation. It is to complement the official document or others materials. `Fabric Devkit` projects are also interactive. 
 
-Secondly, feedbacks to the `Fabric-Devkit` maintainers suggest that official document is "one-size-fits-all". If you are new to blockchain it is pretty tough to understand what Hyperledger Fabric is, let alone how to use it. `Fabric DevKit` projects were tailored to satisfy the learning objectives from the point of views of Platform (or DevOps or Site Reliability) Engineers, Application Developers and Product Owners.
+Secondly, `Fabric DevKit` projects are intended to satisfy the learning objectives from the point of views of Platform (or DevOps or Site Reliability) Engineers, Application Developers and Product Owners (see definition below). `Fabric DevKit` projects illustrates aspects of Hyperledger Fabric in bite-sized but fully functional demonstrators. It is not a one-size-fits-all project like the official [Build Your First Network demonstrator](https://hyperledger-fabric.readthedocs.io/en/release-1.4/build_network.html). 
 
 | Role | Description |
 | :--- | :--- |
@@ -16,39 +16,13 @@ Secondly, feedbacks to the `Fabric-Devkit` maintainers suggest that official doc
 | Application Developers | Anyone who is involved in the creation of User Interfaces (UI) and integrating UI with middleware. |
 | Product owners | Anyone who is member of an agile team who serves as the Customer proxy responsible for working with Product Management and other stakeholders—including other POs—to define and prioritize stories in the team backlog<sup>[1](https://www.scaledagileframework.com/product-owner/)</sup> |
 
-Thirdly, by being independent of the official Hyperledger Fabric projects it gives the principal maintainers of the `Fabric-Devkit` the ability to share knowledge at a pace of their own choosing.
+Thirdly, by being independent of the official Hyperledger Fabric project, it gives the principal maintainers of the `Fabric-Devkit` the ability to share knowledge at a pace of their own choosing.
 
 Fourthly, the best way to learn about a technology is to create and share stuff!
 
-## How can I stuff in Fabric Devkit that interest me?
+## How can I find projects in Fabric Devkit that interest me?
 
-`Fabric Devkit` projects are categorised as `core`, `dev` or `demo`.
-
-| Type | Description |
-| --- | --- |
-| Core | These projects demonstrate the inner workings of the core components of Hyperledger Fabric. |
-| Dev | These projects  demonstrate the principles of developing apps interacting with Hyperledger Fabric|
-| Demo | These projects demonstrate ways of implementing Hyperledger Fabric based solution to satisfy a given use case. |
-
-Alternatively, you could try to find a `Personas` that matches you and follow the user stories associated with the persona. There are hypertext links that will leead you to aspects of `Fabric Devkit` that might interest you.
-
-## Who maintains the Fabric Devkit?
-
-* [https://fabric-devkit/core-platform](https://fabric-devkit/core-platform) is dedicated to demonstrating ways of assembling parts of Hyperledger Fabric components.
-
-*Dev projects*
-
-* [https://fabric-devkit/dev-chaincode-go](https://fabric-devkit/dev-chaincode-go) is deducated to demonstrating the core principles of writing chaincode in Go.
-
-*Demo projects*
-
-Demo projects are named `github.com/fabric-devkit/demo-<domain>-<optional>`. This listof demo projects are:
-
-* [https://fabric-devkit/demo-ldap](https://fabric-devkit/demo-ldap) is dedicated to demonstrating the integration between an LDAP and Hyperledger Fabric
-
-*Find projects by personas*
-
-Alternatively, select on the left panel the item named `Personas`, then select the roles appropriate to yours and then select the persona that matches you. Follow the steps of activities describe in the persona.
+You can search for the projects by [topics](https://fabric-devkit.github.io/topics.html) or by [persona](https://fabric-devkit.github.io/personas.html). See left panel.
 
 ## Who are the maintainers?
 
