@@ -26,15 +26,33 @@ Fourthly, the best way to learn about a technology is to create and share stuff!
 
 | Type | Description |
 | --- | --- |
-| Core | These are projects created without any reference to specific domains such as Supply Chain, Cryptocurrencies, etc. They are typically projects intending to illustrate the underlying architecture of Hyperledger Fabric or productivity tools that can be used to support other projects. |
-| Dev | These projects provide basic tools to help developers build applications and also demonstrate principles of developing apps interacting with Hyperledger Fabric|
-| Demo | These are projects created to illustrate one of many ways of implementing a given use case. |
+| Core | These projects demonstrate the inner workings of the core components of Hyperledger Fabric. |
+| Dev | These projects  demonstrate the principles of developing apps interacting with Hyperledger Fabric|
+| Demo | These projects demonstrate ways of implementing Hyperledger Fabric based solution to satisfy a given use case. |
 
 Alternatively, you could try to find a `Personas` that matches you and follow the user stories associated with the persona. There are hypertext links that will leead you to aspects of `Fabric Devkit` that might interest you.
 
 ## Who maintains the Fabric Devkit?
 
-`Fabric Devkit` projects are based on contributions from volunteers collaborating on an ad hoc basis.
+* [https://fabric-devkit/core-platform](https://fabric-devkit/core-platform) is dedicated to demonstrating ways of assembling parts of Hyperledger Fabric components.
+
+*Dev projects*
+
+* [https://fabric-devkit/dev-chaincode-go](https://fabric-devkit/dev-chaincode-go) is deducated to demonstrating the core principles of writing chaincode in Go.
+
+*Demo projects*
+
+Demo projects are named `github.com/fabric-devkit/demo-<domain>-<optional>`. This listof demo projects are:
+
+* [https://fabric-devkit/demo-ldap](https://fabric-devkit/demo-ldap) is dedicated to demonstrating the integration between an LDAP and Hyperledger Fabric
+
+*Find projects by personas*
+
+Alternatively, select on the left panel the item named `Personas`, then select the roles appropriate to yours and then select the persona that matches you. Follow the steps of activities describe in the persona.
+
+## Who are the maintainers?
+
+`Fabric Devkit` projects are based on contributions from volunteers collaborating on an ad hoc basis. 
 
 The two principal contributors (maintainers) are Paul Sitoh and David Carrington, who are also the owner and administrator, respectively, of the Github repositories hosting the `Fabric Devikits`. They will be the final arbiters on the projects to be managed under the banner of `Fabric Devkits`.
 
