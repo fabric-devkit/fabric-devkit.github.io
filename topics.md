@@ -3,6 +3,14 @@ title: Topics
 nav_order: 3
 ---
 
+`Fabric Devkit` projects are categorised under three broad topics `core`, `dev` or `demo`.
+
+| Type | Description |
+| --- | --- |
+| Core | These projects demonstrate the inner workings of the core components of Hyperledger Fabric. |
+| Dev | These projects  demonstrate the principles of developing apps interacting with Hyperledger Fabric|
+| Demo | These projects demonstrate ways of implementing Hyperledger Fabric based solution to satisfy a given use case. |
+
 ## Core projects
 
 Core projects are named `github.com/fabric-devkit/core-<domain>-<optional>`. The list of core projects are:
