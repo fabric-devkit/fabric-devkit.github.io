@@ -1,10 +1,10 @@
 # Overview
 
-The `Fabric Devkit` started out as a project to create a toolkit to help developers developing solution based on Hyperledger Fabric version 1.0. There was a lack of toolkit that made it easy for developers to create solution. The creator and principal maintainers of the project (initially Paul Sitoh, and later joined by David Carrington) had to conduct experimentation to understand the inner workings and capabilities of Hyperledger Fabric. This led to the creation of demonstrators.
+The `Fabric Devkit` started out as a project to create a toolkit to help developers developing solution based on Hyperledger Fabric version 1.0. There was a lack of toolkit that made it easy for developers to create solution for that version.
 
-As part of the learning process as well as soliciting feedback from the wider developers communities, the demonstrators were collected and group into `Fabric DevKit` that is shared as open sourced projects.
+To support the creation of the toolkit, the creator and principal maintainers of `Fabric DevKit` (initially Paul Sitoh, and later joined by David Carrington) had to conduct experimentation to understand the inner workings and capabilities of Hyperledger Fabric. This led to the creation of demonstrators. As part of the learning process as well as soliciting feedback from the wider developers communities, the demonstrators were collected and group, culminating in the `Fabric DevKit` that is now shared as open sourced projects.
 
-If you want to learn about Hyperledger Fabric through playing with interactive code, `Fabric DevKit` is just right for you.
+If you want to learn about Hyperledger Fabric through playing with interactive code, `Fabric DevKit` could just be the resource for you.
 
 ## What can I expect from the Fabric Devkit?
 
