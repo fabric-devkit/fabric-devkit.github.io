@@ -5,57 +5,46 @@ nav_order: 2
 
 ## Overview
 
-From a very high level perspective, Hyperledger Fabric, according to its official document is a "platform for distributed ledger solutions" and sometimes referred to as a Blockchain platform. However, what exactly is a distributed ledger or blockchain and what problem is Hyperledger Fabric intended to solve?
+There are several terms and concepts that are unique to Hyperledger Fabric which `Fabric DevKit` is based. Please refer to the official documentation for a detailed explanation of the terms used. For the purpose of `Fabric DevKit`, we summarised some of the key terms used and these are:
 
-The answers to these questions can be found the [official documentation](https://hyperledger-fabric.readthedocs.io/en/release-1.4/blockchain.html). However, for the purpose of appreciating the intention behind `Fabric Devkit`, we'll focus on these core aspects of Hyperledger Fabric architecture:
+| Terms | Definition |
+| --- | --- |
+| Chaincode | A Go, Node or Hyperledger Fabric support code installed on peer node to enable it to perform computation |
+| Channel | A subnet of a Fabric network. |
+| Client node | A type of node serving as an interface between a human user and a peer node |
+| Fabric network | A network of a grouping of client, peer and ordering nodes. Each grouping is typically owned by a participant |
+| Fabric Organisation (or Organisation) | A grouping of nodes identified by a root domain with each node in the grouping identified by sub-domain |
+| Ledger | A series of timed transactions recorded in blocks that are cryptographically linked. |
+| Node | A node a generalised term for computing platform responsible for processing blockchain ledgers, handling interactions with human users and enabling the blockchain network to reach consensus. |
+| Participant | This refer to an entity typically an real world organisation or even a individual owning a collection of computing nodes |
+| Peer node | A type of node responsible for validating transactions sent from client nodes. |
+| Ordering node | A type of node responsible for taking transactions of a client node and packing it into a block and sending the block to the peer node to update the world state. |
+| World state | A world state is datastore found in peer nodes representing the state generated from the clumination of transactions found in the ledger. All peers in the same channel share the same state or data structure and should have the same value for a given time frame -- i.e. consensus view. |
 
-* Nodes;
-* Transactions;
-* Ledger (or blockchain);
-* World states;
-* Orderer;
-* Identity, Membership Service Provider (MSP) and Certificate Authority (CA);
-* Chaincode;
-* Networks, organisations and channels;
-* Consensus and transactional finality.
+![A Hyperledger Fabric Network](https://vitalflux.com/wp-content/uploads/2017/12/hyperledger-fabric-channel-example-1.png "A Hyperledger Fabric Network.")
 
-## Nodes, transactions, ledger, world states and orderer
+NOTE: In the above diagram, the red and blue ledger notations represents different channels of a given Fabric Network. E0. E1, E2 and E3 represents peer nodes.
 
-A distributed ledger is not dissimilar to a distributed computing system, where you have a `client node` (a User Interface) sending instructions or transactions to a backend or server node (known in Hyperledger Fabric speak as a `peer node`).
+## [Key concepts from official documentation](https://hyperledger-fabric.readthedocs.io/en/release-1.4/key_concepts.html)
 
-In conventional distributed computing system nodes process the instruction and updates some datastore (Hyperledger Fabric equivalent is known as `World State`), upon receipt of a transaction.
+* [Introduction](https://hyperledger-fabric.readthedocs.io/en/release-1.4/blockchain.html).
+* [Hyperledger Fabric Functionalities](https://hyperledger-fabric.readthedocs.io/en/release-1.4/functionalities.html).
+* [Hyperledger Fabric Model](https://hyperledger-fabric.readthedocs.io/en/release-1.4/fabric_model.html).
+* [Blockchain network](https://hyperledger-fabric.readthedocs.io/en/release-1.4/network/network.html).
+* [Identity](https://hyperledger-fabric.readthedocs.io/en/release-1.4/identity/identity.html).
+* [Membership](https://hyperledger-fabric.readthedocs.io/en/release-1.4/membership/membership.html).
+* [Peers](https://hyperledger-fabric.readthedocs.io/en/release-1.4/peers/peers.html).
+* [Smart Contracts and Chaincode](https://hyperledger-fabric.readthedocs.io/en/release-1.4/smartcontract/smartcontract.html).
+* [Ledger](https://hyperledger-fabric.readthedocs.io/en/release-1.4/ledger/ledger.html).
+* [The Ordering Service](https://hyperledger-fabric.readthedocs.io/en/release-1.4/orderer/ordering_service.html).
+* [Private data](https://hyperledger-fabric.readthedocs.io/en/release-1.4/private-data/private-data.html).
+* [Channel capabilities](https://hyperledger-fabric.readthedocs.io/en/release-1.4/capabilities_concept.html).
 
-In the case of Hyperledger Fabric, transactions have to be crypographically signed and the peer nodes are responsible for ensuring that the signature is valid. The peer node is also responsible for ensuring that when it process any transaction, it will be able produce results that are consistent with results of previous ones (the combination of these steps are known as `endorsement`).
+## Additional reading materials
 
-Following endorsement, peers sent transactions to the `orderer` who is responsible for packing transactions into a block and is also reponsible for linking blocks cryptographically to form a chain of blocks (also known as the `ledger`). The latest block is then sent out all peer nodes in the Hyperledger Fabric network. The receiving peers will be responsible executing transactions in the block, committing results of transactions in the `world state` and adding the block to the ledger.
-
-## Identity, MSP and CA
-
-All transactions process by Hyperledger Fabric peer node has to be signed with valid keys that are encoded in digital certificates. These items are stored in a special compartment known as a `Membership Service Provider`(MPS), which is used in all Hyperledger Fabric component for the identity purposes. A detailed explanation of how Hyperledger Fabric deals with identity please refer to this [blog](https://medium.com/@kctheservant/identity-in-hyperledger-fabric-94d06439816e).
-
-A key component involved in the generation of artefacts, such as crytographic keys and digital certificates, used for identity purposes is Certificate Authority (CA). If you new to the concept of digital certificates and CA, please refer to this [how Digital Certificates work](https://www.youtube.com/watch?v=heacxYUnFHA) then please also refer to this [blog](https://medium.com/@kctheservant/exploring-fabric-ca-registration-and-enrollment-1b9f4a1b3ace) to understand the relationship between Hyperledger Fabric CA and client nodes.
-
-## Chaincodes
-
-A transaction in the context of Hyperledger Fabric is essentially a function call comprising of a name to indicate it's intent (e.g. pay) and function arguments (e.g. name of payee, amount and payer).
-
-When a transaction is sent to a peer node, the piece of code that is responsible for processing the transactions is known as `chaincode`.
-
-## Networks and channels
-
-A Hyperledger Fabric node rarely and cannot operate on its own. At a minimum, there'll be at least one client node, one peer node, a CA and an orderer. A combination of nodes and CA could grouped under one domain to form a `organisation`. An other combination could constitute another organisation. One or more orderers would be cluster under its own organisation. All organisations when network together under a top level domain is known as a `network`.
-
-Hyperledger Fabric network can also be effectively subnet to facilitate messaging between subsets of organisations. This is done through a mechanism known as `channels`.
-
-Please refer to this [blog](https://medium.com/hyperlegendary/understanding-hyperledger-fabrics-architecture-3b37d81c3e96) for an architecture overview.
-
-## Consensus and transactional finality
-
-In a Fabric network, the job of endorsing and sequencing transactions into ledger is decentralised; all peers capture transactions independent of each other in a network. 
-
-The job of ensuring that are peers provides a common view (i.e. reach a `consensus`) of the ledger is based on endorsement from at least one or more peers and the orderer who is reponsible for ordering the blocks and transactions.
-
-Having reached consensus on the sequencing of transactions and blocks, the last stage of is to commit the results of the transactions in the world state. When the a transaction is committed to all peers, the transaction is said to have achieved `transactional finality`.
+* [Blogs by KC Tam](https://medium.com/@kctheservant)
+* [What are the differences between Ethereum, Hyperledger Fabric and Hyperledger Sawtooth?](https://medium.com/coinmonks/what-are-the-differences-between-ethereum-hyperledger-fabric-and-hyperledger-sawtooth-5d0fc279d862)
+* [Hyperledger Fabric- The Most Popular Hyperledger Framework](https://hackernoon.com/hyperledger-fabric-the-most-popular-hyperledger-framework-b4485dea6a2c)
 
 ## Copyright Notice
 
