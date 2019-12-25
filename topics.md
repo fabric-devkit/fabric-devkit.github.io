@@ -15,7 +15,9 @@ nav_order: 3
 
 Core projects are named `github.com/fabric-devkit/core-<domain>-<optional>`. The list of core projects are:
 
-* [https://fabric-devkit.github.io/core-platform](https://fabric-devkit.github.io/core-platform) is dedicated to demonstrating ways of assembling parts of Hyperledger Fabric components.
+* [core-platform](https://fabric-devkit.github.io/core-platform) is dedicated to demonstrating ways of forming networks.
+* [core-ca](https://fabric-devkit.github.io/core-ca/) is dedicated to demonstrating the inner workings of Fabric CA.
+* [core-cryptoconfig](https://fabric-devkit.github.io/core-cryptoconfig/) is dedicated to ways of creating crytographic materials for identity purposes and channel configuration.
 
 ## Dev projects
 
