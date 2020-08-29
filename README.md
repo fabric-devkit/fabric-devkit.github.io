@@ -4,7 +4,7 @@
 > 
 > All projects under `Fabric Devkit` all now deprecated.
 > 
-> Some projects are being migrated to [https://github.com/openconsentia](https://github.com/openconsentia). 
+> Some projects are being migrated to [https://github.com/openconsentia](https://github.com/openconsentia).
 
 The `Fabric Devkit` started out as a project to create a toolkit to help developers developing solution based on Hyperledger Fabric version 1.0. There was a lack of toolkit that made it easy for developers to create solution for that version.
 
